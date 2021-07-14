@@ -44,13 +44,15 @@ router.get('/:id', async (req, res) => {
 
 /*
 {
-  "product_name": "Basketball",
-  "price": 200.00,
-  "stock": 3,
-  "tagIds": [1, 2, 3, 4]
+  "product_name": "Jordan 1 Chicago",
+  "price": 500.00,
+  "stock": 2,
+  "category_id": 5,
+  "tagIds": [4, 8]
 }
 */
 router.post('/', (req, res) => {
+
   Product.create(req.body)
     .then((product) => {
       if (req.body.tagIds.length) {
@@ -70,6 +72,7 @@ router.post('/', (req, res) => {
       res.status(400).json(err);
     });
 });
+
 
 router.put('/:id', (req, res) => {
   Product.update(req.body, {
