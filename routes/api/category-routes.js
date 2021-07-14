@@ -4,10 +4,10 @@ const { Category, Product } = require('../../models');
 // The `/api/categories` endpoint
 router.get('/', async(req, res) => {
   try {
-    const catagoryData = await Category.findAll({
+    const categoryData = await Category.findAll({
       include: [{ model: Product }],
     });
-    res.status(200).json(catagoryData);
+    res.status(200).json(categoryData);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -15,15 +15,15 @@ router.get('/', async(req, res) => {
 
 router.get('/:id', async(req, res) => {
   try {
-    const catagoryById = await Category.findByPk(req.params.id, {
+    const categoryById = await Category.findByPk(req.params.id, {
       include: [{ model: Product }],
     });
 
-    if (!catagoryById) {
+    if (!categoryById) {
       res.status(404).json({ message: 'No category found with that id!' });
       return;
     }
-    res.status(200).json(catagoryById);
+    res.status(200).json(categoryById);
 
   } catch (err) {
     res.status(500).json(err);
@@ -32,13 +32,13 @@ router.get('/:id', async(req, res) => {
 
 /*
 {
-  "catagory_name": "toys"
+  "category_name": "toys"
 }
 */
 router.post('/', async(req, res) => {
   try {
     const newCategory = await Category.create({
-      catagory_name: req.body.catagory_name,
+      category_name: req.body.category_name,
     });
     res.status(200).json(newCategory);
   } catch (err) {
@@ -54,7 +54,7 @@ router.put('/:id', async(req, res) => {
       }
     });
     if (!updateCategory) {
-      res.status(404).json({ message: 'No catagory found with this id!' });
+      res.status(404).json({ message: 'No category found with this id!' });
       return;
     }
     res.status(200).json(updateCategory);
@@ -71,7 +71,7 @@ router.delete('/:id', async(req, res) => {
       }
     })
     if (!delCategory) {
-      res.status(404).json({ message: 'No catagory found with this id!' });
+      res.status(404).json({ message: 'No category found with this id!' });
       return;
     }
     res.status(200).json(delCategory);
