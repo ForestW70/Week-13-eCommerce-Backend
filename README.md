@@ -46,7 +46,7 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
 # Extras
 
 * Demo:
-  [App demo](tbd)
+  [App demo](https://youtu.be/y_LAilM1hRY)
 
 * Links:
   [Repo page](https://github.com/ForestW70/hw13ecommercebackend)
