@@ -1,16 +1,28 @@
 # Forest Wilson - Homework 13 - E-commerce backend
 MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT) - For Evil.
+<!-- Original deployment date: July 14th, 2021 -->
 
 ## Table of Contents:
+- [Tech used](#tech-used)
 - [Project description](#project-description)
 - [Usage instructions](#usage-instructions)
 - [Project installation](#project-installation)
 - [Additional comments](#additional-comments)
 - [Contribution information](#contribution-information)
 - [Questions](#questions-or-concerns)
+- [Extras](#extras)
 
 
 ### About This Project
+
+* # Tech used:
+  1. JavaScript
+  2. MySql
+  3. Insomnia - for checking API calls
+  - Npm
+    1. express.js
+    2. dotenv
+    3. sequelize
 
 * # Project description:
   Welcome to e-commerce, well the backend. using sequelize and express you can take control of an e-commerce, mysql database. You can view products, catagories, and tags, while also being able to add, modify, and delete all of the afformentioned rows. 
@@ -46,7 +58,7 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
 # Extras
 
 * Demo:
-  [App demo](https://youtu.be/y_LAilM1hRY)
+  - [App demo](https://youtu.be/y_LAilM1hRY)
 
 * Links:
-  [Repo page](https://github.com/ForestW70/hw13ecommercebackend)
+  - [Repo page](https://github.com/ForestW70/hw13ecommercebackend)
