@@ -3,6 +3,7 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
 <!-- Original deployment date: July 14th, 2021 -->
 
 ## Table of Contents:
+- [This week's concepts](#this-weeks-concepts)
 - [Tech used](#tech-used)
 - [Project description](#project-description)
 - [Usage instructions](#usage-instructions)
@@ -10,22 +11,27 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
 - [Additional comments](#additional-comments)
 - [Contribution information](#contribution-information)
 - [Questions](#questions-or-concerns)
-- [Extras](#extras)
+- [Links](#extras)
 
 
 ### About This Project
 
+* # This weeks concepts:
+  1. Insomnia / Postman
+  2. Sequelize
+
 * # Tech used:
   1. JavaScript
-  2. MySql
-  3. Insomnia - for checking API calls
-  - Npm
-    1. express.js
-    2. dotenv
-    3. sequelize
+  2. MySql / Sequelize
+  3. Insomnia 
+  4. Node.js
+  5. Npm
+    * 1. express.js
+      2. sequelize
+      3. dotenv
 
 * # Project description:
-  Welcome to e-commerce, well the backend. using sequelize and express you can take control of an e-commerce, mysql database. You can view products, catagories, and tags, while also being able to add, modify, and delete all of the afformentioned rows. 
+  Given a non-stop desire to create my own eBay clone, I developed a back-end server using Express to build a RESTful API that can handle an online store's database. Within this Node application, I used the Sequelize package to communicate with my DB, and Insomnia to test all get, put, post, and delete routes.
 
 * # Usage instructions
   Use this application to handle fetch requests for your e-commerce website. navigate to desired route, choose fetch method(check routes for details), then manage your database how you desire.
@@ -33,15 +39,17 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
 * # Project installation
   1. npm i 
   2. npm run mySql 
-  3. npm run seed 
+  3. npm run seed
   4. npm start 
-  5. open insomnia/prefered fetcher 
+  5. open insomnia/prefered alternative
   6. Enjoy. 
      
 * # Additional comments
+(Jul/14/21)
+
   - pretty straight forward project. knowing what I know now, a lot of this was fresh in my mind, so not many difficulties were encountered. 
 
-  - I did have a hurdle where I suppose my repo became unsynced and I couldnt use any git command without getting a fatal error: unable to read tree. it seemed to be not a well documented issue so the only option was to reclone and manually put back the changed which was annoying, but oh well 
+  - I did have a hurdle where I suppose my repo became unsynced and I couldnt use any git command without getting a fatal error: unable to read tree. it seemed to not be a well documented issue so the only option was to reclone and manually put back the changed which was annoying, oh well. 
 
 
 #### Contribution information 
