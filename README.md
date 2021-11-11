@@ -19,6 +19,7 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
 * # This weeks concepts:
   1. Insomnia / Postman
   2. Sequelize
+  3. RESTful APIs
 
 * # Tech used:
   1. JavaScript
